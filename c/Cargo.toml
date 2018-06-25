@@ -1,0 +1,10 @@
+cargo-features = ["rename-dependency"]
+
+[package]
+name = "c"
+version = "0.1.0"
+authors = ["Kaz Wesley <kaz@lambdaverse.org>"]
+
+[dependencies]
+not_a = { path = "../a", package = "a" }
+b = { path = "../b" }
